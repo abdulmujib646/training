@@ -1,9 +1,176 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Test</title>
+        <title>My Website</title>
+        <h1>Hello Word!</h1>
     </head>
-    <body>
-        <h1>Hello World 10</h1>
+       <body>
+        <p>ini paragraf 1</p>
+        <p>ini paragraf 2</p>
+        <hr>
+        ini baris 1
+        <br>
+        ini baris 2
+        <!--Ini Komentar-->
+        <hr>
+        <p><b>This text is bold</b></p>
+        <p><i>This text is italic</i></p>
+        <p>This is <sub>Subcript</sub>and<sup>Supercript</sup></p>
+        <h3>Bahasa Pemrograman untuk dipelajari :</h3>
+        <ul>
+            <li>Java Script</li>
+            <li>PHP</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>Kotlin</li>
+        </ul>
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Contac</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Andres</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro Comercial Moctezuma</td>
+                <td>Fransisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>Asal</th>
+                <th>Domisili</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <center>Jakarta</center>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th rowspan="2">Jakarta</th>
+                <td>- A -</td>
+                <td>- B -</td>
+            </tr>
+            <tr>
+                <td>- C -</td>
+                <td>- D -</td>
+            </tr>
+        </table>
+        <img src="inipepek.png.jpg" alt="Ini Pepek" width="200" height="200"/>
+        <p>
+            <a href="https://www.google.com/imgres?q=bang%20messi&imgurl=https%3A%2F%2Fasset-2.tstatic.net%2Fjatim%2Ffoto%2Fbank%2Fimages%2FArtinya-Apa-Bang-Messi-viral-ABCAD.jpg&imgrefurl=https%3A%2F%2Fjatim.tribunnews.com%2F2023%2F03%2F08%2Farti-kata-dan-asal-usul-bahasa-gaul-artinya-apa-bang-messi-meme-viral-di-media-sosial&docid=vkxIjHyYcHb7LM&tbnid=b0w5lOxx5LtfEM&vet=12ahUKEwjMwbb3-dOGAxXc6qACHWvuBcQQM3oECBUQAA..i&w=700&h=393&hcb=2&ved=2ahUKEwjMwbb3-dOGAxXc6qACHWvuBcQQM3oECBUQAA">Bang Messi</a>
+        </p>
+        <a href="https://yandex.com/">Link Bokep</a>
+        <p>
+            <a href="#asep">Klik Cari Namaku</a>
+        </p>
+        <h2 id="kau">tono</h2>
+        <h2 id="kau">toni</h2>
+        <h2 id="kau">nono</h2>
+        <h2 id="kau">sumariah</h2>
+        <h2 id="kau">sukiah</h2>
+        <h2 id="asep">garong</h2>
+        <form action=""method="post">
+            <label for="name">Nama</label>
+            <input id="name" type="text">
+            <br/>
+            <input type="password" required>
+            <br/>
+            <input type="checkbox">
+            <br/>
+            <input type="radio">
+            <br/>
+            <input type="number" min="1" max="10">
+            <br/>
+            <textarea rows="8" cols="64">Ketik Di sini</textarea>
+            <br/>
+            <input type="sumbit" value="OK">
+        </form>
+        <button type="button">OK</button>
+        <button type="button" onclick="doSomething();">Apply</button>
+        <p>Apa warna favouritmu?</p>
+        <select>
+            <option>Merah</option>
+            <option>Navy</option>
+            <option>Kontol</option>
+            <option>Nono</option>
+        </select>
+        <p>Apa Makanan favouritmu?</p>
+        <select>
+            <option>Momok</option>
+            <option>Sate Kontol</option>
+            <option>Nenen</option>
+            <option selected>Lucinta Luna</option>
+        </select>
+        <p>Minuman favouritmu?</p>
+        <select>
+            <optgroup label="Jus Buhah">
+                <option>Jus Apel</option>
+                <option>Jus Strawberry</option>
+                <option>Jas Jus</option>
+            </optgroup>
+            <optgroup label="Jamu">
+                <option>Dawet</option>
+                <option>Kunir</option>
+                <option>Kencur</option>
+            </optgroup>
+        </select>
+        <br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="CSS">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="JavaScript">JavaScript</label><br>
+        <fieldset>
+            <legend>Data Diri</legend>
+
+            <p>
+                <label for="nama">Nama</label>
+                <input type="text" name="nama">
+
+            <p>
+                <label for="usia">Usia</label>
+                <input type="number" name="usia">
+        </fieldset>
+        <form action="" name="calculator">
+            <table>
+                <tr>
+                    <td colspan="5"><input type="text" id="display" disabled></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="calculator.display.value += '1'"></td>
+                    <td><input type="button" value="2"onclick="calculator.display.value += '2'"></td>
+                    <td><input type="button" value="3"onclick="calculator.display.value += '3'"></td>
+                    <td><input type="button" value="+"onclick="calculator.display.value += '+'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4"onclick="calculator.display.value += '4'"></td>
+                    <td><input type="button" value="5"onclick="calculator.display.value += '5'"></td>
+                    <td><input type="button" value="6"onclick="calculator.display.value += '6'"></td>
+                    <td><input type="button" value="-"onclick="calculator.display.value += '-'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7"onclick="calculator.display.value += '7'"></td>
+                    <td><input type="button" value="8"onclick="calculator.display.value += '8'"></td>
+                    <td><input type="button" value="9"onclick="calculator.display.value += '9'"></td>
+                    <td><input type="button" value="*"onclick="calculator.display.value += '*'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="C"onclick="calculator.display.value += ''"></td>
+                    <td><input type="button" value="0"onclick="calculator.display.value += '0'"></td>
+                    <td><input type="button" value="="onclick="calculator.display.value = eval(calculator.display.value)"></td>
+                    <td><input type="button" value="/"onclick="calculator.display.value += '/'"></td>
+                </tr>
+            </table>
+        </form>
     </body>
 </html>
